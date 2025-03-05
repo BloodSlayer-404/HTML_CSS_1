@@ -3,61 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h1{
+      font-size: 3vh;
+      background-color: #7aa3d4;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./CSS/index.css">
 	<title>Taller HTML y CSS 1</title>
 </head>
 <body>
 
   <header>
-    <h1>This is a h1 tag inside a header tag</h1>   
+    <h1>This is a h1 tag inside a header tag with intern styles</h1>   
   </header>
 
 	<nav>
-    <h2>This is a h2 tag inside a nav tag</h2>
-    <h3>This is a h3 tag inside a nav tag</h3>
-    <h4>This is a h4 tag inside a nav tag</h4>
-    <h5>This is a h5 tag inside a nav tag</h5>
-    <h6>This is a h6 tag inside a nav tag</h6>
+    <h2 class="title">This is a h2 tag inside a nav tag</h2>
+    <h3 class="title">This is a h3 tag inside a nav tag</h3>
+    <h4 class="title">This is a h4 tag inside a nav tag</h4>
+    <h5 class="title">This is a h5 tag inside a nav tag</h5>
+    <h6 class="title">This is a h6 tag inside a nav tag</h6>
   </nav>
-  
-  <section>
-    <p>This is a p tag inside a section tag, <strong> but this part of the p is insiede a strong tag</strong>.</p>
-  </section>
 
-  <section>
-    <p>This is another p tag inside a section tag, <em> but this part of the p is insiede a em tag</em>.</p>
-  </section>
+  <div id="text-tags">
+    <section  class="card">
+      <h2>STRONG</h2>
+      <p>This is a p tag inside a section tag, <strong> but this part of the p is insiede a strong tag</strong>.</p>
+    </section>
 
-  <section>
-    <p>This is ANOTHER p tag inside a section tag, <span> but this part of the p is insiede a span tag</span>.</p>
-  </section>
+    <section class="card">
+      <h2>EM</h2>
+      <p>This is another p tag inside a section tag, <em> but this part of the p is insiede a em tag</em>.</p>
+    </section>
 
-  <section>
-    <ol>
-      <li>
-        This is an element of an ordered list
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
-          This is another element of an ordered list but with a link
-        </a>
+    <section class="card">
+      <h2>SPAN</h2>
+      <p>This is ANOTHER p tag inside a section tag, <span style="color: red;"> but this part of the p is insiede a span tag with in line styles</span>.</p>
+    </section>
+  </div>
+
+  <div id="lists"">
+    <section class="list">
+      <ol>
+        <li>
+          This is an element of an ordered list
         </li>
-    </ol>
-  </section>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
+            This is another element of an ordered list but with a link
+          </a>
+          </li>
+      </ol>
+    </section>
+  
+    <section class="list">
+      <ul>
+        <li>
+          This is an element of an unordered list
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
+            This is another element of an unordered list but with a link
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
 
   <section>
-    <ul>
-      <li>
-        This is an element of an unordered list
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">
-          This is another element of an unordered list but with a link
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  
+    <img src="./Img/this_is_an_image.jpg" alt="This should be an image">
+  </section>  
 
   <footer>
     <p>This is a p tag insiede the footer tag</p>
